@@ -1,0 +1,10 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "modules/*"
+
+onlyBuiltDependencies:
+  - esbuild
+  - lightningcss
+allowBuilds:
+  esbuild: true

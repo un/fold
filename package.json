@@ -1,0 +1,18 @@
+{
+  "name": "@unfold/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.4.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "generate-routes": "turbo run generate-routes"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.3",
+    "typescript": "^6.0.2"
+  }
+}

@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+dist/
+build/
+.output/
+.turbo/
+.next/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
