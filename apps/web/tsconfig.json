@@ -6,7 +6,8 @@
     "baseUrl": ".",
     "paths": {
       "#/*": ["./src/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@unfold/ui/*": ["../../packages/ui/src/*"]
     },
     "allowImportingTsExtensions": true,
     "noEmit": true,
