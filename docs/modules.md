@@ -108,8 +108,8 @@ for (const section of editionSettingsSections) {
 Core tables should be defined in core packages. Edition-specific tables should be composed through an edition extension point.
 
 ```ts
-import { coreTables } from "@unfold/db/schema-core";
-import { editionTables } from "@unfold/edition/db";
+import { coreTables } from "@unfold/database/schema/core";
+import { editionTables } from "@unfold/database/schema/edition";
 
 export const schema = {
   ...coreTables,
