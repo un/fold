@@ -1,7 +1,3 @@
-export const coreTables = {}
-export const editionTables = {}
-
-export const schema = {
-  ...coreTables,
-  ...editionTables,
-}
+export * from "./columns"
+export * from "./client"
+export * from "./schema"

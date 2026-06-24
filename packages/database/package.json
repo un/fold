@@ -7,14 +7,47 @@
     ".": {
       "types": "./src/index.ts",
       "default": "./src/index.ts"
+    },
+    "./client": {
+      "types": "./src/client.ts",
+      "default": "./src/client.ts"
+    },
+    "./columns": {
+      "types": "./src/columns.ts",
+      "default": "./src/columns.ts"
+    },
+    "./schema": {
+      "types": "./src/schema/index.ts",
+      "default": "./src/schema/index.ts"
+    },
+    "./schema/core": {
+      "types": "./src/schema/core.ts",
+      "default": "./src/schema/core.ts"
+    },
+    "./schema/edition": {
+      "types": "./src/schema/edition.ts",
+      "default": "./src/schema/edition.ts"
     }
   },
   "scripts": {
     "build": "tsc --noEmit -p tsconfig.json",
+    "db:generate": "drizzle-kit generate --config drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config drizzle.config.ts",
+    "db:push": "drizzle-kit push --config drizzle.config.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "echo \"No database tests yet\""
   },
   "devDependencies": {
+    "@types/node": "^22.20.0",
+    "@types/pg": "^8.20.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@unfold/utils": "workspace:*",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.22.0"
   }
 }
